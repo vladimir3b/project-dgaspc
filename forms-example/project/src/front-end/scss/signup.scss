@@ -4,22 +4,11 @@ $medium-gray: #BDBDBD;
 $light-gray: #E0E0E0;
 $very-light-gray: #F5F5F5;
 
-
-
-button[data-toggle="collapse"] {
-  text-transform: uppercase;
-  color: $very-dark-gray;
-  font-size: 1.5rem;
-  text-decoration: none;
-  &:hover {
-    color: $medium-gray;
-    text-decoration: none;
-  }
-  &:focus {
-    color: $very-dark-gray;
-    text-decoration: none;
-  }
+html {
+  font-size: 14px;
 }
+
+
 
 .title {
   h6 {
@@ -36,5 +25,42 @@ button[data-toggle="collapse"] {
 }
 
 .forms {
-  padding: 0.5rem 1rem;
+  // padding: 0.5rem 1rem;
+}
+
+@for $i from 1 through 6 {
+    h#{7 - $i} {
+      font-size: 3.4em / 12 * $i;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $very-dark-gray;
+
+    }
+}
+
+button[data-toggle="collapse"] {
+  h3 {
+    &:hover, &:focus {
+      color: $dark-gray
+    }
+    margin: 0;
+    padding: 0;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  padding: 2rem;
+  border: 1px $light-gray solid;
+  margin: 1.5rem 0;
+}
+
+h4 {
+  margin: 0 0 1rem 0;
+}
+
+.alert {
+  margin: 0 !important;
 }

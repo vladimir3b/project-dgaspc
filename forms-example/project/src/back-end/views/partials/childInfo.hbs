@@ -1,0 +1,96 @@
+{{!-- alege cresa fields --}}
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <select class="form-control">
+        <option>-- Alege optiune cresa, numarul 1 --</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <select class="form-control">
+        <option>-- Alege optiune cresa, numarul 2 --</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+{{!-- child name --}}
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <input type="text" class="form-control" id="numeCopil" placeholder="Nume copil*">
+    </div>
+  </div>
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <input type="text" class="form-control" id="prenumeCopil" placeholder="Prenume copil*">
+    </div>
+  </div>
+</div>
+
+{{!-- child cnp and age --}}
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <input type="text" class="form-control" id="cnp" placeholder="CNP*">
+    </div>
+  </div>
+  <div class="col-lg-6 col-12">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <input type="number" class="form-control" id="vastaAni" placeholder="Vasta(ani)*">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <input type="number" class="form-control" id="vastaLuni" placeholder="Vasta(luni)*">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- perioada de inscriere fields --}}
+<div class="row">
+  <div class="col">
+    <h4>Perioada de inscriere</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="startingDate" id="startingDate1" value="option1" checked>
+        <label class="form-check-label" for="startingDate1">
+          Incepand cu data de 02.09.2019
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-12">
+    <div class="form-group">
+      <div class="form-check">
+        <div class="row">
+          <div class="col-lg-3 col-2">
+            <input class="form-check-input" type="radio" name="startingDate" id="startingDate2" value="option1" checked>
+            <label class="form-check-label" for="startingDate2">De la data</label>
+          </div>
+          <div class="col">
+            <div class="input-group flex-nowrap">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">
+                  <i class="far fa-calendar-alt"></i>
+                </span>
+              </div>
+              <input type="date" class="form-control" placeholder="de la*" aria-label="date"
+                aria-describedby="addon-wrapping">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,5 @@
-button[data-toggle="collapse"] {
-  text-transform: uppercase;
-  color: #424242;
-  font-size: 1.5rem;
-  text-decoration: none; }
-  button[data-toggle="collapse"]:hover {
-    color: #BDBDBD;
-    text-decoration: none; }
-  button[data-toggle="collapse"]:focus {
-    color: #424242;
-    text-decoration: none; }
+html {
+  font-size: 14px; }
 
 .title {
   padding: 1rem 0.5rem;
@@ -21,5 +12,58 @@ button[data-toggle="collapse"] {
 .form-container {
   border: 1px solid #E0E0E0 !important; }
 
-.forms {
-  padding: 0.5rem 1rem; }
+h6 {
+  font-size: 0.28333em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+h5 {
+  font-size: 0.56667em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+h4 {
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+h3 {
+  font-size: 1.13333em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+h2 {
+  font-size: 1.41667em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+h1 {
+  font-size: 1.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #424242; }
+
+button[data-toggle="collapse"] h3 {
+  margin: 0;
+  padding: 0; }
+  button[data-toggle="collapse"] h3:hover, button[data-toggle="collapse"] h3:focus {
+    color: #616161; }
+
+button[data-toggle="collapse"]:hover, button[data-toggle="collapse"]:focus {
+  text-decoration: none; }
+
+h1 {
+  padding: 2rem;
+  border: 1px #E0E0E0 solid;
+  margin: 1.5rem 0; }
+
+h4 {
+  margin: 0 0 1rem 0; }
+
+.alert {
+  margin: 0 !important; }

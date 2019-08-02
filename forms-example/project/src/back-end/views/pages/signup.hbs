@@ -1,125 +1,80 @@
-<div class="alert alert-info">
-  <i class="fas fa-exclamation-triangle"></i>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, fuga sunt magnam ullam harum commodi.
-</div>
+<div class="container">
 
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Cerere de inscriere la cresa online
-        </button>
-      </h2>
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-info">
+        <i class="fas fa-exclamation-triangle"></i>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, fuga sunt magnam ullam harum commodi.
+      </div>
     </div>
+  </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class="container form-container">
-          <div class="row">
-            <div class="col title">
-              <h6>Informatii despre copil</h6>
+  <div class="row">
+    <div class="col">
+      <h1>
+        Cerere de inscriere la cresa online
+      </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <div class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <h3>Informatii despre copil</h3>
+              </button>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6 col-12 forms">
-              <select class="form-control">
-                <option>-- Alege optiune cresa, numarul 1 --</option>
-              </select>
-            </div>
-            <div class="col-lg-6 col-12 forms">
-              <select class="form-control">
-                <option>-- Alege optiune cresa, numarul 2 --</option>
-              </select>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              {{> childInfo }}
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-lg-6 col-12 forms">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="numeCopil"
-                    placeholder="Nume copil*">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 forms">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="prenumeCopil"
-                    placeholder="Prenume copil*">
-                </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <div class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <h3>Adresa de email</h3>
+              </button>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-lg-6 col-12 forms">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="cnp"
-                    placeholder="CNP*">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 forms">
-              <div class="row">
-                <div class="col">
-                  <div class="form-group">
-                    <input type="number" class="form-control" id="vastaAni"
-                      placeholder="Vasta(ani)*">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <input type="number" class="form-control" id="vastaLuni"
-                      placeholder="Vasta(luni)*">
-                  </div>
-                </div>
-              </div>
-
-
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              {{> email }}
             </div>
           </div>
-
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <div class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <h3>Infornatii despre familia monoparentala sau cu reprezentant legal</h3>
+              </button>
+            </div>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+              moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+              butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+              haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-        haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-          aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-        haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
+
 </div>
