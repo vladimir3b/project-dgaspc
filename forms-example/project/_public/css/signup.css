@@ -1,0 +1,25 @@
+button[data-toggle="collapse"] {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 1.5rem;
+  text-decoration: none; }
+  button[data-toggle="collapse"]:hover {
+    color: #BDBDBD;
+    text-decoration: none; }
+  button[data-toggle="collapse"]:focus {
+    color: #424242;
+    text-decoration: none; }
+
+.title {
+  padding: 1rem 0.5rem;
+  background-color: #E0E0E0; }
+  .title h6 {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0; }
+
+.form-container {
+  border: 1px solid #E0E0E0 !important; }
+
+.forms {
+  padding: 0.5rem 1rem; }

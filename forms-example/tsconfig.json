@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": "project/src/front-end/ts",
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "sourceMap": false,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "showConfig": true,
+    "outDir": "./project/_public/js"
+  }
+}

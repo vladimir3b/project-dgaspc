@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+  {{# each scriptsTop as | link index |}}
+    <script type="text/javascript" src="{{ link }}"></script>
+  {{/each}}
+
+  {{# each stylesTop as | link index |}}
+    <link rel="stylesheet" type="text/css" href="{{ link }}">
+  {{/each}}
+
+  {{#if pageStyle}}
+    <link rel="stylesheet" type="text/css" href="css/{{ pageStyle }}.css">
+  {{/if}}
+
+  <title>{{ pageTitle }}</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{{body}}}
+      </div>
+    </div>
+  </div>
+
+
+  {{# each scriptsBottom as | link index |}}
+    <script type="text/javascript" src="{{ link }}"></script>
+  {{/each}}
+
+  {{# each stylesBottom as | link index |}}
+    <link rel="stylesheet" type="text/css" href="{{ link }}">
+  {{/each}}
+
+  {{#if pageStyle}}
+    <script type="text/javascript" src="js/{{ pageScript }}.js"></script>
+  {{/if}}
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "port": 4200,
+  "publicPath": "_public",
+  "viewPath": "views",
+  "frontEndLibrariesCDN": [
+    {
+      "link": "https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js",
+      "positionInHTML": "top"
+    },
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css",
+      "positionInHTML": "top"
+    },
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+      "positionInHTML": "bottom"
+    },
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js",
+      "positionInHTML": "bottom"
+    },
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js",
+      "positionInHTML": "bottom"
+    },
+    {
+      "link": "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
+      "positionInHTML": "top"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Nursery Sign Up",
+      "route": "sign-up",
+      "pageFileName": "signup",
+      "pageStyle": "signup",
+      "pageScript": "signup"
+    }
+  ]
+}

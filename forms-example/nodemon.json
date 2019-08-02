@@ -1,0 +1,12 @@
+{
+  "watch": ["src/", "./config.json"],
+  "verbose": true,
+  "ext": "js, mjs, json",
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "exec": [
+    "node"
+  ]
+}
